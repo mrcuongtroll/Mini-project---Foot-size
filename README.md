@@ -20,5 +20,5 @@ https://www.dienmayxanh.com/kinh-nghiem-hay/cach-xac-dinh-size-giay-cho-nam-gioi
 
 # How to run?
 - Clone this repository.
-- Install required libraries, including cv2, numpy, sklearn, streamlit, and matplotlib.
+- Install required libraries listed in requirements.txt.
 - In the terminal, run this Streamlit app with the following command: `streamlit run main.py`
