@@ -22,3 +22,6 @@ https://www.dienmayxanh.com/kinh-nghiem-hay/cach-xac-dinh-size-giay-cho-nam-gioi
 - Clone this repository.
 - Install required libraries listed in requirements.txt.
 - In the terminal, run this Streamlit app with the following command: `streamlit run main.py`
+
+# Deployed app:
+The app can be found at: https://mrcuongtroll-mini-project---foot-size-main-bz5wl2.streamlitapp.com/
