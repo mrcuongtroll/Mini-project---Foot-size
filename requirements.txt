@@ -1,6 +1,5 @@
-opencv-python
+opencv-python-headless
 sklearn
 matplotlib
 streamlit
 numpy
-cv2
