@@ -91,6 +91,8 @@ def get_bounding_box(edged_img, original_image=None):
         rect.append(cv2.boxPoints(boxes[i]))
         rect[i] = np.int0(rect[i])
     # bounding_boxes.sort(key=lambda x: x[2]*x[3], reverse=True)
+    boxes.sort(key=lambda x: x[1][0]*x[1][1], reverse=True)
+    rect.sort(key=lambda x: cv2.contourArea(x), reverse=True)
     if original_image is not None:
         cv2.drawContours(original_image, contours_smooth, -1, (0, 255, 0), 3)
         cv2.drawContours(original_image, [rect[0]], 0, (255, 0, 0), 3)
