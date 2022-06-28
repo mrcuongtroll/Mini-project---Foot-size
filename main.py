@@ -81,7 +81,7 @@ def main():
 
             # --- Phase 2: find foot bounding box ---
             # Find bounding box for the foot
-            crop_rate = 0.025
+            crop_rate = 0.05
             if pr_height < pr_width:
                 pr_height, pr_width = pr_width, pr_height
                 cropped_img = cropped_img[int(pr_width * crop_rate):int(pr_width * (1 - crop_rate)),
