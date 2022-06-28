@@ -66,8 +66,8 @@ def detect_edge(segmented_img):
     :return: Edge image
     """
     edge_img = cv2.Canny(segmented_img, 100, 200)
-    # edge_img = cv2.dilate(edge_img, np.ones((5, 5), np.uint8), iterations=1)
-    # edge_img = cv2.erode(edge_img, np.ones((5, 5), np.uint8), iterations=1)
+    edge_img = cv2.dilate(edge_img, np.ones((7, 7), np.uint8), iterations=1)
+    edge_img = cv2.erode(edge_img, np.ones((7, 7), np.uint8), iterations=1)
     return edge_img
 
 
